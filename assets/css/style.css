@@ -11,20 +11,50 @@ body {
 }
 
 .container {
-    width: 50%;
-    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 100%;
 }
 
 .dadosPessoais {
-    width: 50%;
+    flex: 50%;
     display: flex;
     flex-flow: column wrap;
+    color: hsl(278, 68%, 11%);
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .dadosPessoais input {
     background-color: hsl(0, 0%, 100%);
-    border-radius: 5%;
+    padding: 10px;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.dadosPessoais button {
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    background: hsl(278, 68%, 11%);
+    border-radius: 8px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex-basis: 48%;
+}
+
+.ExpirationDate,
+.CVC {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.CVC input {
+    width: 50%;
 }
